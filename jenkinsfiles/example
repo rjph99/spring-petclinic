@@ -42,7 +42,98 @@ pipeline {
         sh 'sleep 4'
       }
     }
-    stage('Another stage') {
+    stage('Dev Approval to QA') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('Deploy to QA') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('Smoke-Test QA') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('Regression-Test QA') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('QA Approval to UAT') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('Deploy to UAT') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('Smoke-Test UAT') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('BusinessDefinedTesting-Test UAT') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('UAT Approval to InactiveProd') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('Deploy to InactiveProd') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('Smoke-Test InactiveProd') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('Manual Testing - Test InactiveProd') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('Prod A/B Switch Approval') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+      stage('Smoke-Test Prod') {
       agent any
       steps {
         //sample dummy step
