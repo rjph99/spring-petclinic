@@ -147,5 +147,13 @@ pipeline {
         sh 'sleep 4'
       }
     }
+      stage('Notify Slack') {
+      agent any
+      steps {
+        //update testing liatro slack channel
+        slackSend baseUrl: 'https://testingforliatro.slack.com/services/hooks/jenkins-ci/', botUser: true, channel: '#general', color: 'good', message: 'Testing', token: 'A4gc8vLxpVj3xzBJvnXxulgm'
+      }
+    }
   }
 }
+
