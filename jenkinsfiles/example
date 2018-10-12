@@ -126,7 +126,14 @@ pipeline {
         sh 'sleep 4'
       }
     }
-      stage('Prod A/B Switch Approval') {
+      stage('Prod Update Approval') {
+      agent any
+      steps {
+        //sample dummy step
+        sh 'sleep 4'
+      }
+    }
+       stage('Prod A/B Switch') {
       agent any
       steps {
         //sample dummy step
