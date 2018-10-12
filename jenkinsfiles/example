@@ -151,7 +151,7 @@ pipeline {
       agent any
       steps {
         //update testing liatro slack channel
-        slackSend baseUrl: 'https://testingforliatro.slack.com/services/hooks/jenkins-ci/', botUser: true, channel: '#general', color: 'good', message: 'Testing', token: 'A4gc8vLxpVj3xzBJvnXxulgm'
+        slackSend baseUrl: 'https://testingforliatro.slack.com/services/hooks/jenkins-ci/', botUser: true, channel: '#general', color: 'good', message: 'The Liatro project is working and deployed to prod!', token: 'A4gc8vLxpVj3xzBJvnXxulgm'
       }
     }
   }
